@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinch of Code</title>
-    <link>https://krishnakalesh.github.io/</link>
+    <link>https://krishnakalesh.github.io/pinchofcode/</link>
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Mar 2024 17:27:46 +0530</lastBuildDate>
-    <atom:link href="https://krishnakalesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hosting Hugo generated site in Github 🌊</title>
-      <link>https://krishnakalesh.github.io/post/create_github_site_with_hugo/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</link>
       <pubDate>Fri, 08 Mar 2024 16:49:25 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/create_github_site_with_hugo/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>https://krishnakalesh.github.io/post/very_first_post/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</link>
       <pubDate>Fri, 08 Mar 2024 12:55:13 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/very_first_post/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</guid>
       <description>&lt;p&gt;Hey Everyone.😊 I&amp;rsquo;m Krishna Kalesh. Welcome to my technology blog!&lt;/p&gt;&#xA;&lt;p&gt;I created this blog to jot down my coding and technology learning experiences.&lt;/p&gt;&#xA;&lt;p&gt;Looking forward to sharing my code experiments and latest trends on technology.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://krishnakalesh.github.io/readme/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://krishnakalesh.github.io/readme/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/readme/</guid>
       <description>Hello World!</description>
     </item>
   </channel>
