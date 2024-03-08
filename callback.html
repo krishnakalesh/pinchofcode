@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub OAuth Callback</title>
+</head>
+<body>
+    <h1>GitHub OAuth Callback</h1>
+    <script>
+        // Extract access token and other parameters from URL
+        var params = new URLSearchParams(window.location.search);
+        var accessToken = params.get('access_token');
+        var tokenType = params.get('token_type');
+        var scope = params.get('scope');
+
+        // Handle authentication success
+        if (accessToken && tokenType && scope) {
+            // Perform any necessary actions after successful authentication
+            // For example, store the access token securely or redirect the user to another page
+            // Here, you might want to close the window or redirect the user back to your site's homepage
+            window.close();
+        } else {
+            // Handle authentication failure or incomplete authorization
+            // You may display an error message or redirect the user to another page
+            console.error('Authentication failed or incomplete authorization');
+        }
+    </script>
+</body>
+</html>
