@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinch of Code</title>
-    <link>https://krishnakalesh.github.io/</link>
+    <link>https://krishnakalesh.github.io/pinchofcode/</link>
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 Mar 2024 12:57:33 +0530</lastBuildDate>
-    <atom:link href="https://krishnakalesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>https://krishnakalesh.github.io/post/very_first_post/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</link>
       <pubDate>Fri, 08 Mar 2024 12:55:13 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/very_first_post/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</guid>
       <description>&lt;p&gt;abstraction show in the post page 1 abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1abstraction show in the post page 1&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://krishnakalesh.github.io/readme/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://krishnakalesh.github.io/readme/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/readme/</guid>
       <description>Hello World!</description>
     </item>
   </channel>
