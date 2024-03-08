@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2024 14:24:44 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 16:57:22 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting Hugo generated site in Github 🌊</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</link>
+      <pubDate>Fri, 08 Mar 2024 16:49:25 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</guid>
+      <description>Main Heading Hosting Hugo generated site in Github 🌊&#xA;Subheading 1 This is a subheading where you can discuss a specific aspect of your topic.&#xA;Sub-subheading 1.1 You can further divide your content into sub-subheadings for more granularity.&#xA;Sub-subheading 1.2 Another sub-subheading to organize your content.&#xA;Subheading 2 Another section of your post.&#xA;Sub-subheading 2.1 Sub-subheading under Subheading 2.&#xA;Table Example Header 1 Header 2 Header 3 Cell 1 Cell 2 Cell 3 Cell 4 Cell 5 Cell 6 Inserting an Image Here you can describe the image or provide additional context.</description>
+    </item>
     <item>
       <title>First Post</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</link>
