@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/</loc>
-    <lastmod>2024-03-12T17:09:14+05:30</lastmod>
+    <loc>https://krishnakalesh.github.io/</loc>
+    <lastmod>2024-03-12T17:50:37+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/</loc>
-    <lastmod>2024-03-12T17:09:14+05:30</lastmod>
+    <loc>https://krishnakalesh.github.io/post/</loc>
+    <lastmod>2024-03-12T17:50:37+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</loc>
-    <lastmod>2024-03-12T17:09:14+05:30</lastmod>
+    <loc>https://krishnakalesh.github.io/post/wsl2_aws_ecr_upload/</loc>
+    <lastmod>2024-03-12T17:19:04+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</loc>
+    <loc>https://krishnakalesh.github.io/post/wsl2_docker_windows/</loc>
     <lastmod>2024-03-12T14:36:18+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</loc>
+    <loc>https://krishnakalesh.github.io/post/create_github_site_with_hugo/</loc>
     <lastmod>2024-03-12T14:29:29+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</loc>
+    <loc>https://krishnakalesh.github.io/post/very_first_post/</loc>
     <lastmod>2024-03-08T14:24:44+05:30</lastmod>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/categories/</loc>
+    <loc>https://krishnakalesh.github.io/categories/</loc>
   </url><url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/tags/</loc>
+    <loc>https://krishnakalesh.github.io/tags/</loc>
   </url>
 </urlset>
