@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://krishnakalesh.github.io/pinchofcode/css/light.css' />
     <link rel="stylesheet" href='https://krishnakalesh.github.io/pinchofcode/css/dark.css' />
     <link rel="stylesheet" href='https://krishnakalesh.github.io/pinchofcode/css/syntax.css' />
-    <title>Hosting Hugo generated site in Github 🌊 - Pinch of Code</title>
+    <title>Setting Up WSL 2 and Installing Docker Engine on Windows ❄ - Pinch of Code</title>
     
     <link rel="icon" type="image/x-icon" href='/pinchofcode/images/github.png'>
     
@@ -18,18 +18,18 @@
 
     
     <meta name="description"
-  content="Hosting Hugo generated site in Github 🌊 In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.
+  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/" />
+<link rel="canonical" href="https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Hosting Hugo generated site in Github 🌊 - Pinch of Code" />
+<meta name="twitter:title" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ - Pinch of Code" />
 <meta name="twitter:description"
-  content="Hosting Hugo generated site in Github 🌊 In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.
+  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
 <meta name="twitter:site" content="https://krishnakalesh.github.io/pinchofcode/" />
 <meta name="twitter:creator" content="" />
@@ -38,18 +38,18 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Hosting Hugo generated site in Github 🌊 - Pinch of Code">
+<meta property="og:title" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ - Pinch of Code">
 <meta property="og:description"
-  content="Hosting Hugo generated site in Github 🌊 In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.
+  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
-<meta property="og:url" content="https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/" />
-<meta property="og:site_name" content="Hosting Hugo generated site in Github 🌊" />
+<meta property="og:url" content="https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/" />
+<meta property="og:site_name" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄" />
 <meta property="og:image"
   content="https://krishnakalesh.github.io/pinchofcode/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2024-03-08 16:49:25 &#43;0530 IST" />
+<meta property="article:published_time" content="2024-03-12 11:50:56 &#43;0530 IST" />
 
 
 
@@ -132,18 +132,18 @@
                   <span class="author">
                     <a href="https://krishnakalesh.github.io/pinchofcode/">Krishna Kalesh</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/">Hosting Hugo generated site in Github 🌊</a></strong>
+                      href="https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/">Setting Up WSL 2 and Installing Docker Engine on Windows ❄</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Fri, 08 Mar 2024 16:49:25 &#43;0530"
+                  Created <relative-time datetime="Tue, 12 Mar 2024 11:50:56 &#43;0530"
                     class="no-wrap">
-                    Fri, 08 Mar 2024 16:49:25 &#43;0530</relative-time>
+                    Tue, 12 Mar 2024 11:50:56 &#43;0530</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 12 Mar 2024 11:50:48 &#43;0530"
+                  Modified <relative-time datetime="Tue, 12 Mar 2024 14:17:12 &#43;0530"
                     class="no-wrap">
-                    Tue, 12 Mar 2024 11:50:48 &#43;0530</relative-time>
+                    Tue, 12 Mar 2024 14:17:12 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      806 Words
+                      642 Words
                     
 
                   </div>
@@ -185,108 +185,127 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h1 id="hosting-hugo-generated-site-in-github-">Hosting Hugo generated site in Github 🌊</h1>
-<p>In this post, we&rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.</p>
-<p>The website taken as an example is a blog site here. Also, we wil add Gitalk integration for capturing comments from blog vistors.</p>
-<h2 id="what-is-hugo">What is Hugo?</h2>
-<p><a href="https://gohugo.io/">Hugo</a> is a fast and flexible static site generator written in Go. It allows you to create static websites quickly and easily, with support for themes, content management, and more.</p>
-<h2 id="what-is-github-pages">What is Github Pages?</h2>
-<p><a href="https://pages.github.com/">Github Pages</a>  is designed to host your personal, organization, or project pages from a GitHub repository.
-Simplicty is to the level - it can be hosted directly from your GitHub repository. Just edit, push, and your changes are live.</p>
-<h2 id="gitalk">Gitalk</h2>
-<p>[Gitalk] (<a href="https://github.com/gitalk/gitalk">https://github.com/gitalk/gitalk</a>) is a modern comment component based on GitHub Issue and Preact.</p>
-<h2 id="lets-create-the-repositories-first-in-github">Let&rsquo;s create the repositories first in github</h2>
-<p>For the whole process we need to create two repositories.</p>
+                <article class="markdown-body entry-content container-lg"><p>In this post, we&rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we
+will check how we can install docker engine and run a container using that.</p>
+<p>Windows Subsystem for Linux (WSL) has revolutionized the way developers work on Windows machines by bringing native Linux capabilities directly into the Windows environment. Combined with Docker Engine, it provides a powerful platform for developing and running containerized applications seamlessly. In this guide, we&rsquo;ll walk through the steps to set up WSL 2 and install Docker Engine on your Windows system.</p>
+<h2 id="containerization-concept">Containerization Concept</h2>
+<p>Containerization is OS-based virtualization that creates multiple virtual units in the userspace, known as Containers. Containers share the same host kernel but are isolated from each other through private namespaces and resource control mechanisms at the OS level.</p>
+<p>Refer: <a href="https://www.docker.com/resources/what-container/">https://www.docker.com/resources/what-container/</a> to understand container basics.</p>
+<h2 id="docker-engine">Docker Engine</h2>
+<p>Docker Engine is an open source containerization technology for building and containerizing your applications.</p>
+<p>Refer: <a href="https://docs.docker.com/engine/">https://docs.docker.com/engine/</a> to understand docker engine basics</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before we begin, ensure that you have the following prerequisites:</p>
 <ol>
-<li>First one is where we curate our website content (say - &lsquo;blog&rsquo;, i will call this as &lsquo;blog&rsquo; repo through out below explainations).</li>
-<li>Second one is the repository which will act as the website (say - &lsquo;gamezone&rsquo;, i will call this as &lsquo;gamezone&rsquo; repo through out below explainations).</li>
+<li>Windows 10 or later (with Windows Update enabled)</li>
+<li>Windows Subsystem for Linux 2 (WSL 2) enabled</li>
+<li>An active internet connection</li>
 </ol>
-<p>So, idea is that the repo &lsquo;blog&rsquo; will act as the place where we curate our website contents and once we are ready we can build
-the code to create the contents. The contents genetaed will be copied to the repo &lsquo;gamezone&rsquo; and contents will be available for
-viewers.</p>
-<p>##Install Hugo</p>
-<p>Steps for installing Hugo available @https://gohugo.io/installation/
-Once Hugo installed you can finalize theme for your site from the list - <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
-<h2 id="setup-contents">Setup contents</h2>
-<pre><code>1. Do git clone of your blog repo, say - https://github.com/xyz/blog.git
-
-2. Once cloning comeplete do 
-&gt; cd blog
-&gt; hugo new site gamezone (this command create new Hugo site)
-&gt; cd gamezone
-
-3. Next step is to add a theme to site. Say, we selected a theme (github-style/) 
-&gt; cd themes
-Then, follow the steps specified in theme setup - https://themes.gohugo.io/themes/github-style/   
-
-4. We need to configure hugo.toml with details like baseURL, languageCode, title, theme
-A sample content of toml file can be found at - https://themes.gohugo.io/themes/github-style/
-The base URL will be in the format (https://{YOUR GITHUB ID}.github.io/{YOUR WEBSITE REPO NAME}/)
-
-5. Once site created, theme copied; we can verify the site by bringing up the site in local 
-using command
-&gt; hugo server   
-</code></pre>
-<p>This command should be execute from base folder &lsquo;gamezone&rsquo; and it will bring up site in URL: http://localhost:1313/</p>
-<h2 id="setup-new-post">Setup New Post</h2>
-<pre><code>&gt; hugo new post/POST_NAME.md
-</code></pre>
-<h2 id="edit-the-post-with-your-custom-content">Edit the post with your custom content</h2>
-<p>As we mentioned early, blog repo is the place used for storing the code and gamezone repo is the where we deploy from.
-For deployment easiness, we can add gamezone repo as submodule of blog repo. Before adding gamezone repo
-as submodule create atleast one branch for &lsquo;gamezone&rsquo; repo and do atleast one commit to that branch (say branch name is &lsquo;main&rsquo;).</p>
-<pre><code>&gt; cd /blog/gamezone
-&gt; git submodule add -b main https://github.com/xyz/gamezone.git public
-</code></pre>
-<p>Now, when we do hugo build, the static content will go inside &lsquo;public&rsquo; folder of /blog/gamezone and automatically the contents of &lsquo;public&rsquo; folder will be get bound to the repo <a href="https://github.com/xyz/gamezone.git">https://github.com/xyz/gamezone.git</a></p>
-<h2 id="build">Build</h2>
-<pre><code>&gt; cd /blog/gamezone
-&gt; hugo -t {NAME_OF_THEME} (Example: hugo -t github-style)
-&gt; cd public
-&gt; git remote -v (just ensure remote is https://github.com/xyz/gamezone.git)
-&gt; git status
-&gt; git add .
-&gt; git commit -m 'init repo'   
-&gt; git push origin main
-</code></pre>
-<p><img src="/images/hugo1.png" alt="Alt text"></p>
-<h2 id="deployment">Deployment</h2>
-<p>After git push, you can go and verify the <a href="https://github.com/xyz/gamezone.git">https://github.com/xyz/gamezone.git</a> and we
-can notice that all sthugo aic content generated by hugo build available in git repo
-This will automatically gets deployed.</p>
-<p>Verify the github pages settings from  Settings&ndash;&gt; Pages option of the git repo.
-ThE URL to access  the site is also available here.</p>
-<p><img src="/images/hugo2.png" alt="Alt text"></p>
-<h2 id="gitalk-1">Gitalk</h2>
-<p>For recording site vistors comments we can use <a href="https://github.com/gitalk/gitalk">https://github.com/gitalk/gitalk</a>
-Security for comments can be set up using <a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a>
-Many theme templates already will have this facility, otherwise add below code to capture
-comments for your posts.</p>
-<pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css&#34;&gt;
-&lt;script src=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js&#34;&gt;&lt;/script&gt;
- 
-	&lt;div id=&#34;gitalk-container&#34;&gt;&lt;/div&gt;
- 
-	&lt;script type=&#34;text/javascript&#34;&gt;
-		var gitalk = new Gitalk({
-			clientID: &#39;GitHub Application Client ID&#39;,
-			clientSecret: &#39;GitHub Application Client Secret&#39;,
-			repo: &#39;your GitHub repo name&#39;,
-			owner: &#39;GitHub repo owner&#39;,
-			admin: [&#39;GitHub repo owner and collaborators, only these guys can initialize github issues&#39;],
-			id: decodeURI(location.pathname), // Ensure uniqueness and length less than 50
-			distractionFreeMode: false  // Facebook-like distraction free mode
-		})
- 
-		gitalk.render(&#39;gitalk-container&#39;)
-    &lt;/script&gt;
-</code></pre><h2 id="common-issues">Common Issues</h2>
+<h2 id="step-1-enable-wsl-2-on-windows">Step 1: Enable WSL 2 on Windows</h2>
 <ol>
-<li>Make sure the &lsquo;baseURL&rsquo; in hugo.toml file is coreect. This can be different in local vs production.</li>
-<li>gitalk configuration in hugo.toml, specify id = &ldquo;location.pathname&rdquo;</li>
-<li>For gitalk configuration, inside Github -&gt; Settings -&gt;  Developer settings -&gt; [YOUR OAUTH APP]
-Authorization callback URL should be set as your website base URL.</li>
-</ol></article>
+<li>Open PowerShell as an Administrator.</li>
+<li>Run the following command to enable WSL 2:
+<blockquote>
+<p>wsl &ndash;set-default-version 2</p>
+</blockquote>
+</li>
+<li>Restart your computer to apply the changes.</li>
+<li>Check status using command
+<blockquote>
+<p>wsl &ndash;status</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Tip</strong>: We can use new Terminal app from Windows instead of PowerShell: <a href="https://learn.microsoft.com/en-us/windows/terminal/install">https://learn.microsoft.com/en-us/windows/terminal/install</a>
+Windows 11 already comes with it enabled. For Windows 10, we may need to install it manually.</p>
+<p>In case you do not see wsl itslef in your windows machine,
+follow, <a href="https://learn.microsoft.com/en-us/windows/wsl/install">https://learn.microsoft.com/en-us/windows/wsl/install</a> for installations.</p>
+<h2 id="step-2-install-a-linux-distribution">Step 2: Install a Linux Distribution</h2>
+<p>Preferred Linux distribution can be installed either from command line way or from Microsoft Store</p>
+<p>Command line way</p>
+<p><img src="/images/wsl.png" alt="Alt text"></p>
+<p>Microsoft Store</p>
+<p><img src="/images/ms_store.png" alt="Alt text"></p>
+<p>Launch the installed Linux distribution to initialize the setup process.</p>
+<p>Create a user account and password when prompted.</p>
+<p>Once installed, here after when you type below commands</p>
+<blockquote>
+<p>wsl shutdown (This command will shutdown the WSL subsystem)</p>
+</blockquote>
+<blockquote>
+<p>wsl (This command will launch the WSL subsystem and installed subsystem Linux distributions)</p>
+</blockquote>
+<p><img src="/images/ubuntu.png" alt="Alt text"></p>
+<p>Update the package list and install necessary dependencies:</p>
+<pre tabindex="0"><code>&gt; sudo apt update
+&gt; sudo apt upgrade
+&gt; sudo apt install -y git openssh-client
+</code></pre><h2 id="step-3--install-docker-engine-in-wsl-2">Step 3:  Install Docker Engine in WSL 2</h2>
+<ol>
+<li>
+<p><strong>Verify system requirements:</strong></p>
+<p>Refer: <a href="https://docs.docker.com/desktop/install/windows-install/">https://docs.docker.com/desktop/install/windows-install/</a>
+One additional step; in older Windows Versions we may need to update the linux kernel update pacakage. In updated Windows versions we do not have to do this step.</p>
+<p><a href="https://learn.microsoft.com/ro-ro/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package">https://learn.microsoft.com/ro-ro/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package</a></p>
+</li>
+<li>
+<p><strong>Install docker engine to WSL distribution</strong></p>
+<p>Refer: <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script">https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script</a>
+We use a convenience script here</p>
+<blockquote>
+<p>curl -fsSL <a href="https://get.docker.com">https://get.docker.com</a> -o get-docker.sh
+chmod +x get-docker.sh
+sudo ./get-docker.sh</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Post Installation Scripts</strong></p>
+<p>Refer: <a href="https://docs.docker.com/engine/install/linux-postinstall/">https://docs.docker.com/engine/install/linux-postinstall/</a></p>
+<p>Here we create a docker group and add our user to that group</p>
+<p>a. Create the docker group.</p>
+<blockquote>
+<p>sudo groupadd docker</p>
+</blockquote>
+<p>b. Add your user to the docker group.</p>
+<blockquote>
+<p>sudo usermod -aG docker $USER</p>
+</blockquote>
+<p>b. Log out and log back in so that your group membership is re-evaluated.
+You can also run the following command to activate the changes to groups:</p>
+<blockquote>
+<p>newgrp docker</p>
+</blockquote>
+<p>Many modern Linux distributions use systemd to manage which services start when the system boots. On Debian and Ubuntu, the Docker service starts on boot by default. To automatically start Docker and containerd on boot for other Linux distributions using systemd, run the following command:</p>
+<blockquote>
+<p>sudo systemctl enable docker.service</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Time to Verify Installations</strong></p>
+</li>
+</ol>
+<p>Verify that you can run docker commands without sudo.</p>
+<blockquote>
+<p>docker run hello-world</p>
+</blockquote>
+<p>This will start running a container. We can try running a nginx container as well.</p>
+<blockquote>
+<p>docker pull nginx</p>
+</blockquote>
+<blockquote>
+<p>docker run &ndash;name mynginx -p 80:80 -d nginx</p>
+</blockquote>
+<p><img src="/images/docker1.png" alt="Alt text">
+<img src="/images/nginx.png" alt="Alt text"></p>
+<ol start="5">
+<li><strong>If you would like to install docker compose plugin</strong></li>
+</ol>
+<p>Refer: <a href="https://docs.docker.com/compose/install/linux/">https://docs.docker.com/compose/install/linux/</a></p>
+<pre><code>&gt; sudo apt update
+&gt; sudo apt install docker-compose-plugin
+&gt; docker compose version
+</code></pre>
+<p>You can now leverage the power of Docker containers for developing and deploying applications seamlessly in your Windows environment.</p></article>
               </div>
             </div>
           </div>
