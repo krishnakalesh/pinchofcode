@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</loc>
+    <lastmod>2024-03-12T18:59:04+05:30</lastmod>
+  </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/</loc>
-    <lastmod>2024-03-12T17:50:37+05:30</lastmod>
+    <lastmod>2024-03-12T18:59:04+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/post/</loc>
-    <lastmod>2024-03-12T17:50:37+05:30</lastmod>
+    <lastmod>2024-03-12T18:59:04+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</loc>
     <lastmod>2024-03-12T17:19:04+05:30</lastmod>

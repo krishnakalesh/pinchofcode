@@ -6,8 +6,15 @@
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Mar 2024 17:19:04 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 18:59:04 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Kubernetes on Ubuntu: A Step-by-Step Guide 🛳</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</link>
+      <pubDate>Tue, 12 Mar 2024 17:23:31 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</guid>
+      <description>&lt;h1 id=&#34;installing-kubernetes-on-ubuntu-a-step-by-step-guide-&#34;&gt;Installing Kubernetes on Ubuntu: A Step-by-Step Guide 🛳&lt;/h1&gt;&#xA;&lt;p&gt;Kubernetes has become the de facto standard for container orchestration, enabling organizations to deploy, scale, and manage containerized applications with ease. In this guide, we&amp;rsquo;ll walk through the process of installing Kubernetes on Ubuntu, one of the most popular Linux distributions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Uploading Docker Image from WSL 2 to AWS ECR 🚢</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</link>
