@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinch of Code</title>
-    <link>https://krishnakalesh.github.io/</link>
+    <link>https://krishnakalesh.github.io/pinchofcode/</link>
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Mar 2024 17:19:04 +0530</lastBuildDate>
-    <atom:link href="https://krishnakalesh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Uploading Docker Image from WSL 2 to AWS ECR 🚢</title>
-      <link>https://krishnakalesh.github.io/post/wsl2_aws_ecr_upload/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</link>
       <pubDate>Tue, 12 Mar 2024 16:23:39 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/wsl2_aws_ecr_upload/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</guid>
       <description>&lt;h1 id=&#34;uploading-docker-image-from-wsl-2-to-aws-ecr-&#34;&gt;Uploading Docker Image from WSL 2 to AWS ECR 🚢&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll walk through the process of uploading a Docker image from Windows Subsystem for Linux 2 (WSL 2) to Amazon Elastic Container Registry (ECR) on AWS. Docker has become a cornerstone technology for containerizing applications, and AWS ECR provides a managed container registry service for storing, managing, and deploying Docker container images.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setting Up WSL 2 and Installing Docker Engine on Windows ❄</title>
-      <link>https://krishnakalesh.github.io/post/wsl2_docker_windows/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</link>
       <pubDate>Tue, 12 Mar 2024 11:50:56 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/wsl2_docker_windows/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</guid>
       <description>&lt;h1 id=&#34;setting-up-wsl-2-and-installing-docker-engine-on-windows-&#34;&gt;Setting Up WSL 2 and Installing Docker Engine on Windows ❄&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we&#xA;will check how we can install docker engine and run a container using that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hosting Hugo generated site in Github 🌊</title>
-      <link>https://krishnakalesh.github.io/post/create_github_site_with_hugo/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</link>
       <pubDate>Fri, 08 Mar 2024 16:49:25 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/create_github_site_with_hugo/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</guid>
       <description>&lt;h1 id=&#34;hosting-hugo-generated-site-in-github-&#34;&gt;Hosting Hugo generated site in Github 🌊&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>https://krishnakalesh.github.io/post/very_first_post/</link>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</link>
       <pubDate>Fri, 08 Mar 2024 12:55:13 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/post/very_first_post/</guid>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</guid>
       <description>&lt;p&gt;Hey Everyone.😊 I&amp;rsquo;m Krishna Kalesh. Welcome to my technology blog!&lt;/p&gt;&#xA;&lt;p&gt;I created this blog to jot down my coding and technology learning experiences.&lt;/p&gt;&#xA;&lt;p&gt;Looking forward to sharing my code experiments and latest trends on technology.&lt;/p&gt;</description>
     </item>
   </channel>
