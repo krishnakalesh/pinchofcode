@@ -18,7 +18,7 @@
 
     
     <meta name="description"
-  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
+  content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
 <meta name="keywords"
   content='blog, google analytics' />
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ - Pinch of Code" />
 <meta name="twitter:description"
-  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
+  content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
 <meta name="twitter:site" content="https://krishnakalesh.github.io/pinchofcode/" />
 <meta name="twitter:creator" content="" />
@@ -40,7 +40,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ - Pinch of Code">
 <meta property="og:description"
-  content="In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
+  content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄ In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we will check how we can install docker engine and run a container using that.
 " />
 <meta property="og:url" content="https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/" />
 <meta property="og:site_name" content="Setting Up WSL 2 and Installing Docker Engine on Windows ❄" />
@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 12 Mar 2024 14:23:21 &#43;0530"
+                  Modified <relative-time datetime="Tue, 12 Mar 2024 14:29:18 &#43;0530"
                     class="no-wrap">
-                    Tue, 12 Mar 2024 14:23:21 &#43;0530</relative-time>
+                    Tue, 12 Mar 2024 14:29:18 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      642 Words
+                      653 Words
                     
 
                   </div>
@@ -185,7 +185,8 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p>In this post, we&rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we
+                <article class="markdown-body entry-content container-lg"><h1 id="setting-up-wsl-2-and-installing-docker-engine-on-windows-">Setting Up WSL 2 and Installing Docker Engine on Windows ❄</h1>
+<p>In this post, we&rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we
 will check how we can install docker engine and run a container using that.</p>
 <p>Windows Subsystem for Linux (WSL) has revolutionized the way developers work on Windows machines by bringing native Linux capabilities directly into the Windows environment. Combined with Docker Engine, it provides a powerful platform for developing and running containerized applications seamlessly. In this guide, we&rsquo;ll walk through the steps to set up WSL 2 and install Docker Engine on your Windows system.</p>
 <h2 id="containerization-concept">Containerization Concept</h2>
@@ -223,9 +224,9 @@ follow, <a href="https://learn.microsoft.com/en-us/windows/wsl/install">https://
 <h2 id="step-2-install-a-linux-distribution">Step 2: Install a Linux Distribution</h2>
 <p>Preferred Linux distribution can be installed either from command line way or from Microsoft Store</p>
 <p>Command line way</p>
-<p><img src="/images/pinchofcode/wsl.png" alt="Alt text"></p>
+<p><img src="/pinchofcode/images/wsl.png" alt="Alt text"></p>
 <p>Microsoft Store</p>
-<p><img src="/images/pinchofcode/ms_store.png" alt="Alt text"></p>
+<p><img src="/pinchofcode/images/ms_store.png" alt="Alt text"></p>
 <p>Launch the installed Linux distribution to initialize the setup process.</p>
 <p>Create a user account and password when prompted.</p>
 <p>Once installed, here after when you type below commands</p>
@@ -235,7 +236,7 @@ follow, <a href="https://learn.microsoft.com/en-us/windows/wsl/install">https://
 <blockquote>
 <p>wsl (This command will launch the WSL subsystem and installed subsystem Linux distributions)</p>
 </blockquote>
-<p><img src="/images/pinchofcode/ubuntu.png" alt="Alt text"></p>
+<p><img src="/pinchofcode/images/ubuntu.png" alt="Alt text"></p>
 <p>Update the package list and install necessary dependencies:</p>
 <pre tabindex="0"><code>&gt; sudo apt update
 &gt; sudo apt upgrade
@@ -295,8 +296,8 @@ You can also run the following command to activate the changes to groups:</p>
 <blockquote>
 <p>docker run &ndash;name mynginx -p 80:80 -d nginx</p>
 </blockquote>
-<p><img src="/images/pinchofcode/docker1.png" alt="Alt text">
-<img src="/images/pinchofcode/pinchofcode/nginx.png" alt="Alt text"></p>
+<p><img src="/pinchofcode/images/docker1.png" alt="Alt text">
+<img src="/pinchofcode/images/pinchofcode/nginx.png" alt="Alt text"></p>
 <ol start="5">
 <li><strong>If you would like to install docker compose plugin</strong></li>
 </ol>
