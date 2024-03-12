@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 12 Mar 2024 18:59:04 &#43;0530"
+                  Modified <relative-time datetime="Tue, 12 Mar 2024 19:07:06 &#43;0530"
                     class="no-wrap">
-                    Tue, 12 Mar 2024 18:59:04 &#43;0530</relative-time>
+                    Tue, 12 Mar 2024 19:07:06 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      579 Words
+                      584 Words
                     
 
                   </div>
@@ -215,7 +215,8 @@
 </span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;net.bridge.bridge-nf-call-iptables = 1\nnet.ipv4.ip_forward = 1\nnet.bridge.bridge-nf-call-ip6tables = 1\n&#34;</span> &gt;&gt; /etc/sysctl.d/99-kubernetes-cri.conf
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sysctl --system
-</span></span></code></pre></div><h2 id="install-container-run-time-kubernetes-prefer-containerd-so-used-that-instead-of-docker">Install Container run time. Kubernetes prefer containerd. so used that instead of Docker.</h2>
+</span></span></code></pre></div><h2 id="install-container-run-time">Install Container run time.</h2>
+<p>Kubernetes prefer containerd. so used that instead of Docker.</p>
 <p>Run below scripts as root user</p>
 <p>Here, we download the containerd tar.gz and enable containerd as a service.
 Also, setting default configuration for containerd as well.</p>
@@ -237,11 +238,10 @@ Also, setting default configuration for containerd as well.</p>
 </span></span><span class="line"><span class="cl">systemctl restart containerd
 </span></span></code></pre></div><h2 id="make-swap-memory-off">Make Swap memory OFF</h2>
 <p>Run below scripts as root user</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">    &gt; sudo -i
-</span></span><span class="line"><span class="cl">	&gt; swapoff -a
-</span></span><span class="line"><span class="cl">	&gt; <span class="nb">exit</span>	
-</span></span><span class="line"><span class="cl">	&gt; free -h
-</span></span><span class="line"><span class="cl">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo -i
+</span></span><span class="line"><span class="cl">swapoff -a
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span>	
+</span></span><span class="line"><span class="cl">free -h
 </span></span><span class="line"><span class="cl"><span class="c1">#(swapoff -a  &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;  disable it in /etc/fstab instead by commenting out the line mentioned swap)</span>
 </span></span></code></pre></div><h2 id="download-kubernetes-components">Download Kubernetes components.</h2>
 <p>Run below scripts as root user</p>
@@ -262,7 +262,7 @@ Also, setting default configuration for containerd as well.</p>
 </span></span><span class="line"><span class="cl">	apt-get install -y <span class="nv">kubelet</span><span class="o">=</span>1.26.9-00 <span class="nv">kubeadm</span><span class="o">=</span>1.26.9-00 <span class="nv">kubectl</span><span class="o">=</span>1.26.9-00
 </span></span><span class="line"><span class="cl">	apt-mark hold kubelet kubeadm kubectl
 </span></span></code></pre></div><h2 id="all-the-above-steps-we-need-to-do-in-master-as-well-as-worker-nodes">All the above steps we need to do in master as well as worker nodes.</h2>
-<h2 id="master-node---initialize-kubeadm">Master Node - Initialize kubeadm</h2>
+<h2 id="master-node-only---initialize-kubeadm">Master Node Only - Initialize kubeadm</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo kubeadm init --pod-network-cidr 10.10.0.0/16 --kubernetes-version 1.26.9 --node-name k8s-appmaster.xyzcorp
 </span></span></code></pre></div><p>Now exit from root user mode and login as normal user to VM and execute below commands</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">	mkdir -p <span class="nv">$HOME</span>/.kube
@@ -273,13 +273,14 @@ Also, setting default configuration for containerd as well.</p>
 </span></span><span class="line"><span class="cl">	<span class="nv">$kubectl</span> get nodes
 </span></span><span class="line"><span class="cl">	<span class="nv">$kubectl</span> get namespaces
 </span></span><span class="line"><span class="cl">	<span class="nv">$kubectl</span> get pods -n kube-system
-</span></span></code></pre></div><h2 id="master-node---add-cni-plugin">Master Node - Add CNI plugin</h2>
+</span></span></code></pre></div><h2 id="master-node-only---add-cni-plugin">Master Node Only - Add CNI plugin</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/tigera-operator.yaml
 </span></span><span class="line"><span class="cl">wget https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/custom-resources.yaml
 </span></span><span class="line"><span class="cl">vi custom-resources.yaml <span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span> edit the CIDR <span class="k">for</span> pods as it<span class="err">&#39;</span>s custom - 10.10.0.0/16
 </span></span><span class="line"><span class="cl">kubectl apply -f custom-resources.yaml
 </span></span></code></pre></div><p>Refer : <a href="https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart">https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart</a></p>
-<h2 id="remove-the-taints-on-the-control-plane-so-that-you-can-schedule-pods-on-it">Remove the taints on the control plane so that you can schedule pods on it.</h2>
+<h2 id="remove-the-taints-on-the-master-node">Remove the taints on the master node</h2>
+<p>Remove the taints on the master node so that you can schedule pods on it.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">	kubectl taint nodes --all node-role.kubernetes.io/control-plane-
 </span></span><span class="line"><span class="cl">	kubectl taint nodes --all node-role.kubernetes.io/master-
 </span></span></code></pre></div><h2 id="generate-token-for-worker-nodes">Generate token for worker nodes</h2>
