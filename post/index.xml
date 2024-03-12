@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Mar 2024 14:36:18 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 17:09:14 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uploading Docker Image from WSL 2 to AWS ECR 🚢</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</link>
+      <pubDate>Tue, 12 Mar 2024 16:23:39 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</guid>
+      <description>&lt;h1 id=&#34;uploading-docker-image-from-wsl-2-to-aws-ecr-&#34;&gt;Uploading Docker Image from WSL 2 to AWS ECR 🚢&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll walk through the process of uploading a Docker image from Windows Subsystem for Linux 2 (WSL 2) to Amazon Elastic Container Registry (ECR) on AWS. Docker has become a cornerstone technology for containerizing applications, and AWS ECR provides a managed container registry service for storing, managing, and deploying Docker container images.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Setting Up WSL 2 and Installing Docker Engine on Windows ❄</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</link>
