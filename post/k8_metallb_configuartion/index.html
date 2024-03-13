@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Wed, 13 Mar 2024 17:35:10 &#43;0530"
+                  Modified <relative-time datetime="Wed, 13 Mar 2024 17:59:44 &#43;0530"
                     class="no-wrap">
-                    Wed, 13 Mar 2024 17:35:10 &#43;0530</relative-time>
+                    Wed, 13 Mar 2024 17:59:44 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      401 Words
+                      400 Words
                     
 
                   </div>
@@ -214,22 +214,22 @@ Add IP range pool in a yaml</p>
 </span></span><span class="line"><span class="cl">  <span class="n">namespace</span><span class="p">:</span> <span class="n">metallb</span><span class="o">-</span><span class="n">system</span>
 </span></span><span class="line"><span class="cl"><span class="n">spec</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">  <span class="n">addresses</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">  <span class="o">-</span> <span class="mf">122.122.1.11</span><span class="o">/</span><span class="mi">32</span>
+</span></span><span class="line"><span class="cl">  <span class="o">-</span> <span class="mf">198.144.1.4</span><span class="o">/</span><span class="mi">32</span>
 </span></span><span class="line"><span class="cl"><span class="o">---</span>
 </span></span><span class="line"><span class="cl"><span class="n">apiVersion</span><span class="p">:</span> <span class="n">metallb</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">v1beta1</span>
 </span></span><span class="line"><span class="cl"><span class="n">kind</span><span class="p">:</span> <span class="n">L2Advertisement</span>
 </span></span><span class="line"><span class="cl"><span class="n">metadata</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">  <span class="n">name</span><span class="p">:</span> <span class="n">empty</span>
 </span></span><span class="line"><span class="cl">  <span class="n">namespace</span><span class="p">:</span> <span class="n">metallb</span><span class="o">-</span><span class="n">system</span>
-</span></span></code></pre></div><p>Replace 122.122.1.11 with your desired CIDR range. The /32 &ldquo;/32&rdquo; denotes the subnet mask in CIDR notation.
+</span></span></code></pre></div><p>Replace 122.122.1.11 with your desired CIDR range. The &ldquo;/32&rdquo; denotes the subnet mask in CIDR notation.
 It indicates that all 32 bits of the IPv4 address are part of the network address,
 leaving no bits for host addresses.</p>
 <p>Essentially, it specifies a network with just one host address, which is the IP address itself.</p>
 <p>Once changes are done, apply it using</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">$kubectl</span> apply -f L2-range-allocation.yaml
 </span></span></code></pre></div><p>Metal LB pods will start appearing
-<img src="/pinchofcode/images/metal1.png" alt="Alt text">
-<strong>2. Deploy a Load-Balanced Service</strong></p>
+<img src="/pinchofcode/images/metal1.png" alt="Alt text"></p>
+<p><strong>2. Deploy a Load-Balanced Service</strong></p>
 <p>Here, we deploy a sample application, such as Nginx, and obtain a VIP for it</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Deployment</span><span class="w">
@@ -271,11 +271,12 @@ leaving no bits for host addresses.</p>
 </span></span></span></code></pre></div><p>Save this to a file named nginx-deployment.yaml and do</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubectl apply -f nginx-deployment.yaml
 </span></span></code></pre></div><p><strong>2. Verify Service</strong></p>
+<p><img src="https://github.com/krishnakalesh/devops-diagrams/blob/main/metallb/pictures/metal-lb_1.png" alt="Alt text"></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">$kubectl</span> get service
 </span></span><span class="line"><span class="cl">NAME         TYPE           CLUSTER-IP      EXTERNAL-IP   PORT<span class="o">(</span>S<span class="o">)</span>        AGE
 </span></span><span class="line"><span class="cl">kubernetes   ClusterIP      10.55.0.1       &lt;none&gt;        443/TCP        2d
-</span></span><span class="line"><span class="cl">nginx        LoadBalancer   10.55.144.12   122.122.1.11   80:31186/TCP   50s
-</span></span></code></pre></div><p>We can access the application using URL - http://122.122.1.11:80</p></article>
+</span></span><span class="line"><span class="cl">nginx        LoadBalancer   10.55.144.12   198.144.1.4   80:31186/TCP   50s
+</span></span></code></pre></div><p>We can access the application using URL - http://198.144.1.4:80</p></article>
               </div>
             </div>
           </div>
