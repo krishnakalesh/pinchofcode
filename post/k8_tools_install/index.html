@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Wed, 13 Mar 2024 14:53:10 &#43;0530"
+                  Modified <relative-time datetime="Wed, 13 Mar 2024 15:00:54 &#43;0530"
                     class="no-wrap">
-                    Wed, 13 Mar 2024 14:53:10 &#43;0530</relative-time>
+                    Wed, 13 Mar 2024 15:00:54 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -224,7 +224,7 @@ L2-range-allocation.yaml and do</p>
 </span></span><span class="line"><span class="cl"><span class="c1">#Example - sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination xxx.xxx.x.x:80</span>
 </span></span></code></pre></div><h2 id="how-to-make-create-a-tls-secret">How to make create a TLS secret</h2>
 <p>This TLS secret can be used in ingress settings to apply certificates of your domains</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">	kubectl create secret tls xyzcorp-tls --namespace develop --key<span class="o">=</span>xyzcorp.key --cert<span class="o">=</span>xyzcorp-crt.crt -o yaml		
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubectl create secret tls xyzcorp-tls --namespace develop --key<span class="o">=</span>xyzcorp.key --cert<span class="o">=</span>xyzcorp-crt.crt -o yaml		
 </span></span></code></pre></div><h2 id="how-to-install-keycloak-software">How to install Keycloak Software</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">helm install keycloak -f keycloak-values.yaml bitnami/keycloak -n develop
 </span></span></code></pre></div><p>Sample  <a href="https://krishnakalesh.github.io/pinchofcode/data/keycloak-values.yaml">Keycloak Installation yaml</a></p>
