@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 12 Mar 2024 19:07:06 &#43;0530"
+                  Modified <relative-time datetime="Wed, 13 Mar 2024 10:58:57 &#43;0530"
                     class="no-wrap">
-                    Tue, 12 Mar 2024 19:07:06 &#43;0530</relative-time>
+                    Wed, 13 Mar 2024 10:58:57 &#43;0530</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      584 Words
+                      913 Words
                     
 
                   </div>
@@ -290,7 +290,74 @@ can be used by worker nodes to join control-plane.</p>
 </span></span></code></pre></div><h2 id="for-worker-nodes-to-join-master">For worker nodes to join master</h2>
 <p>Use the command received from above step from worker node and then worker will
 automatically join the cluster.</p>
-<p><img src="/pinchofcode/images/k81.png" alt="Alt text"></p></article>
+<p><img src="/pinchofcode/images/k81.png" alt="Alt text"></p>
+<h2 id="common-issues">Common Issues</h2>
+<p><strong>Below steps can be used to reset and install Kubernetes again</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubectl get pods --all-namespaces
+</span></span><span class="line"><span class="cl">sudo systemctl disable kubelet
+</span></span><span class="line"><span class="cl">sudo systemctl stop kubelet  
+</span></span><span class="line"><span class="cl">sudo systemctl stop kube-proxy
+</span></span><span class="line"><span class="cl">sudo systemctl stop containerd
+</span></span><span class="line"><span class="cl">sudo systemctl status containerd 
+</span></span><span class="line"><span class="cl">kubectl delete configmap -n kube-system calico-config
+</span></span><span class="line"><span class="cl">kubectl delete networkpolicy --all -n kube-system  
+</span></span><span class="line"><span class="cl">sudo kubeadm reset -f  
+</span></span><span class="line"><span class="cl">sudo rm -rf /usr/bin/kubelet /usr/bin/kubeadm /usr/bin/kubectl  
+</span></span><span class="line"><span class="cl">sudo rm -rf /etc/kubernetes/
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/lib/kubelet/
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/lib/kube-proxy/
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/lib/kubelet/
+</span></span><span class="line"><span class="cl">sudo rm -rf /opt/cni/bin/calico*
+</span></span><span class="line"><span class="cl">sudo rm -rf /etc/cni/net.d/10-calico.conflist
+</span></span><span class="line"><span class="cl">sudo rm -rf /etc/cni/net.d/calico-kubeconfig
+</span></span><span class="line"><span class="cl">sudo rm -rf /home/digital-app3/.kube/
+</span></span><span class="line"><span class="cl">sudo rm -rf /etc/systemd/system/kubelet.service.d
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/lib/etcd
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/log/kubernetes/
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/log/kube-proxy/
+</span></span><span class="line"><span class="cl">sudo rm -f /etc/cni/net.d/calico-*
+</span></span><span class="line"><span class="cl">sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni 
+</span></span><span class="line"><span class="cl">sudo apt-get autoremove  
+</span></span><span class="line"><span class="cl">sudo journalctl --vacuum-time<span class="o">=</span>1d  
+</span></span><span class="line"><span class="cl">sudo reboot 
+</span></span></code></pre></div><p>Once everything removed to re apply, we need to repeat steps from
+kubernetes installation to reinstate Kubernetes setup.</p>
+<p><strong>Below steps can be used to remove a worker node from cluster</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">  kubectl drain k8s-worker1.xyzcorp --ignore-daemonsets
+</span></span><span class="line"><span class="cl">  kubectl delete node k8s-worker1.xyzcorp
+</span></span></code></pre></div><p><strong>Below steps can be used to reset kubeadm</strong></p>
+<p>Once everything removed to re apply, we need to repeat steps from
+kubernetes installation to reinstate Kubernetes setup.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl stop kubelet
+</span></span><span class="line"><span class="cl">sudo kubeadm reset
+</span></span><span class="line"><span class="cl">sudo apt remove -y kubectl kubelet kubeadm
+</span></span><span class="line"><span class="cl">sudo apt autoremove -y
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span><span class="line"><span class="cl">chekc <span class="k">if</span> any process running
+</span></span><span class="line"><span class="cl">ps aux <span class="p">|</span> grep kube-
+</span></span></code></pre></div><p><strong>Complete removal of containerd</strong></p>
+<p>Once everything removed to re apply, we need to repeat steps from
+kubernetes installation to reinstate Kubernetes setup.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl disable containerd
+</span></span><span class="line"><span class="cl">sudo apt-get remove containerd.io
+</span></span><span class="line"><span class="cl">sudo apt autoremove
+</span></span><span class="line"><span class="cl">sudo apt-get purge containerd.io
+</span></span><span class="line"><span class="cl">sudo rm -rf /etc/containerd
+</span></span><span class="line"><span class="cl">sudo rm -rf /var/lib/containerd
+</span></span><span class="line"><span class="cl">sudo apt autoremove
+</span></span><span class="line"><span class="cl">sudo apt-get clean
+</span></span><span class="line"><span class="cl">dpkg -l <span class="p">|</span> grep containerd
+</span></span><span class="line"><span class="cl">sudo dpkg --purge containerd
+</span></span><span class="line"><span class="cl">sudo apt autoremove
+</span></span></code></pre></div><p><strong>Some helpful scripts for installation verifications</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubectl get pod -n tigera-operator <span class="p">|</span> grep Error <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">|</span> xargs kubectl delete pod -n tigera-operator --&gt;&gt;&gt;&gt;&gt; to remove tigera-operator
+</span></span><span class="line"><span class="cl">kubectl cluster-info
+</span></span><span class="line"><span class="cl">kubectl get nodes
+</span></span><span class="line"><span class="cl">kubectl get namespaces
+</span></span><span class="line"><span class="cl">kubectl get pods -n kube-system
+</span></span><span class="line"><span class="cl">kubectl get pods --all-namespaces
+</span></span></code></pre></div></article>
               </div>
             </div>
           </div>
