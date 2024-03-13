@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 10:58:57 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 14:53:10 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation of some common tools in Onpremise Kubernetes 🏳</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</link>
+      <pubDate>Wed, 13 Mar 2024 11:23:42 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</guid>
+      <description>&lt;h1 id=&#34;installation-of-some-common-tools-in-onpremise-kubernetes-&#34;&gt;Installation of some common tools in Onpremise Kubernetes 🏳&lt;/h1&gt;&#xA;&lt;p&gt;In this guide, we&amp;rsquo;ll walk through the process of installing tools like Helm, Metallb, Ingress Controller, Keycloak, Jenkins in  Kubernetes (Ubuntu).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Installing Kubernetes on Ubuntu: A Step-by-Step Guide 🛳</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</link>
