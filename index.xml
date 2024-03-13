@@ -6,8 +6,15 @@
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 15:00:54 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 17:35:10 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MetalLB as a Load Balancer Service for On-Premises Kubernetes 🎡</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</link>
+      <pubDate>Wed, 13 Mar 2024 16:40:55 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</guid>
+      <description>&lt;h1 id=&#34;metallb-as-a-load-balancer-service-for-on-premises-kubernetes-&#34;&gt;MetalLB as a Load Balancer Service for On-Premises Kubernetes 🎡&lt;/h1&gt;&#xA;&lt;p&gt;Unlike cloud providers that offer built-in load balancers, on-premises Kubernetes clusters often lack this functionality out-of-the-box. In this guide, we&amp;rsquo;ll walk through the process of configuring MetalLB as a load balancer service for your on-premises Kubernetes cluster, enabling you to distribute traffic to your applications effectively.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Installation of some common tools in Onpremise Kubernetes 🏳</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</link>
