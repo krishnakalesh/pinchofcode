@@ -6,8 +6,15 @@
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 18:03:38 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2024 16:54:49 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ingress and Load Balancer binding in bare-metal Kubernetes🚀</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</link>
+      <pubDate>Fri, 29 Mar 2024 15:53:47 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</guid>
+      <description>&lt;h1 id=&#34;ingress-and-load-balancer-binding-in-bare-metal-kubernetes&#34;&gt;Ingress and Load Balancer binding in bare-metal Kubernetes🚀&lt;/h1&gt;&#xA;&lt;p&gt;In our previous post we have seen how we can add MetalLB to our bare-metal Kubernetes.&#xA;It helps us with a single point of contact between client network and cluster.&lt;/p&gt;&#xA;&lt;p&gt;MetalLB helps for load-balancing external services we can combine it with an ingress controller,&#xA;to provide a stateful layer between the network and the services.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MetalLB as a Load Balancer Service for On-Premises Kubernetes 🎡</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</link>
