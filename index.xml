@@ -6,8 +6,15 @@
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2024 17:05:19 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2024 18:24:37 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free SSL certificates using Cert manager and Let’s Encrypt 🕵️‍♂️</title>
+      <link>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</link>
+      <pubDate>Fri, 29 Mar 2024 17:38:19 +0530</pubDate>
+      <guid>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</guid>
+      <description>&lt;h1 id=&#34;free-ssl-certificates-using-cert-manager-and-lets-encrypt-&#34;&gt;Free SSL certificates using Cert manager and Let’s Encrypt 🕵️‍♂️&lt;/h1&gt;&#xA;&lt;p&gt;Securing web traffic with SSL/TLS certificates is essential for protecting data privacy and maintaining trust with users. In Kubernetes environments, managing SSL certificates manually can be cumbersome and error-prone. However, with tools like Cert Manager and Let’s Encrypt, obtaining and renewing SSL certificates can be automated, ensuring seamless encryption for your applications. In this blog post, we&amp;rsquo;ll explore how Cert Manager and Let’s Encrypt work together to provide automatic SSL certificate management in Kubernetes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ingress and Load Balancer binding in bare-metal Kubernetes🚀</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</link>
