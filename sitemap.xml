@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</loc>
-    <lastmod>2024-03-29T18:32:38+05:30</lastmod>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/ocpp_ev/</loc>
+    <lastmod>2024-03-29T19:14:11+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/</loc>
-    <lastmod>2024-03-29T18:32:38+05:30</lastmod>
+    <lastmod>2024-03-29T19:14:11+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/post/</loc>
+    <lastmod>2024-03-29T19:14:11+05:30</lastmod>
+  </url><url>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</loc>
     <lastmod>2024-03-29T18:32:38+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</loc>
@@ -33,7 +36,7 @@
     <lastmod>2024-03-12T14:29:29+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</loc>
-    <lastmod>2024-03-08T14:24:44+05:30</lastmod>
+    <lastmod>2024-03-29T19:06:27+05:30</lastmod>
   </url><url>
     <loc>https://krishnakalesh.github.io/pinchofcode/categories/</loc>
   </url><url>
