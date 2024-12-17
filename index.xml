@@ -6,14 +6,14 @@
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 14:35:07 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2024 15:16:34 +0530</lastBuildDate>
     <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EV Charging: OCPP 2.0.1: Major Advancement from OCPP 1.6 🔋</title>
       <link>https://krishnakalesh.github.io/pinchofcode/post/ev_ocpp2/</link>
       <pubDate>Mon, 16 Dec 2024 00:19:41 +0530</pubDate>
       <guid>https://krishnakalesh.github.io/pinchofcode/post/ev_ocpp2/</guid>
-      <description>&lt;h1 id=&#34;ev-charging-ocpp-201-major-advancement-from-ocpp-16-&#34;&gt;EV Charging: OCPP 2.0.1: Major Advancement from OCPP 1.6 🔋&lt;/h1&gt;&#xA;&lt;p&gt;OCPP 1.6 has been widely adopted in EV charging infrastucture and customer business management. Vendors have started adopting OCPP 2.0.0 widely now. With the release of OCPP 2.0.1, the EV industry has a robust and future-ready protocol, offering significant improvements over its predecessor, OCPP 1.6. In this blog post, we&amp;rsquo;ll explore what OCPP 2.0.0 is, why it&amp;rsquo;s essential, and how it works using a sample implementation of it.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ev-charging-ocpp-201-major-advancement-from-ocpp-16-&#34;&gt;EV Charging: OCPP 2.0.1: Major Advancement from OCPP 1.6 🔋&lt;/h1&gt;&#xA;&lt;p&gt;OCPP 1.6 has been widely adopted in EV charging infrastucture and customer business management. Vendors have started adopting OCPP 2.0.1 widely now. With the release of OCPP 2.0.1, the EV industry has a robust and future-ready protocol, offering significant improvements over its predecessor, OCPP 1.6. In this blog post, we&amp;rsquo;ll explore what OCPP 2.0.1 is, why it&amp;rsquo;s essential, and how it works using a sample implementation of it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EV Charging: Thanks to Open Charge Point Protocol (OCPP) 🚗</title>
