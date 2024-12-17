@@ -2,80 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinch of Code</title>
-    <link>https://krishnakalesh.github.io/pinchofcode/</link>
+    <link>http://localhost:1313/pinchofcode/</link>
     <description>Recent content on Pinch of Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2024 19:38:12 +0530</lastBuildDate>
-    <atom:link href="https://krishnakalesh.github.io/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Dec 2024 14:35:07 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/pinchofcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EV Charging: OCPP 2.0.1: Major Advancement from OCPP 1.6 🔋</title>
+      <link>http://localhost:1313/pinchofcode/post/ev_ocpp2/</link>
+      <pubDate>Mon, 16 Dec 2024 00:19:41 +0530</pubDate>
+      <guid>http://localhost:1313/pinchofcode/post/ev_ocpp2/</guid>
+      <description>&lt;h1 id=&#34;ev-charging-ocpp-201-major-advancement-from-ocpp-16-&#34;&gt;EV Charging: OCPP 2.0.1: Major Advancement from OCPP 1.6 🔋&lt;/h1&gt;&#xA;&lt;p&gt;OCPP 1.6 has been widely adopted in EV charging infrastucture and customer business management. Vendors have started adopting OCPP 2.0.0 widely now. With the release of OCPP 2.0.1, the EV industry has a robust and future-ready protocol, offering significant improvements over its predecessor, OCPP 1.6. In this blog post, we&amp;rsquo;ll explore what OCPP 2.0.0 is, why it&amp;rsquo;s essential, and how it works using a sample implementation of it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>EV Charging: Thanks to Open Charge Point Protocol (OCPP) 🚗</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/ocpp_ev/</link>
+      <link>http://localhost:1313/pinchofcode/post/ocpp_ev/</link>
       <pubDate>Fri, 29 Mar 2024 19:00:32 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/ocpp_ev/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/ocpp_ev/</guid>
       <description>&lt;h1 id=&#34;ev-charging-thanks-to-open-charge-point-protocol-ocpp-&#34;&gt;EV Charging: Thanks to Open Charge Point Protocol (OCPP) 🚗&lt;/h1&gt;&#xA;&lt;p&gt;The electric vehicle (EV) revolution is gaining momentum, with more and more drivers making the switch to cleaner transportation. But alongside the growing number of EVs comes the need for a robust and standardized charging infrastructure. This is where the Open Charge Point Protocol (OCPP) comes in. In this blog post, we&amp;rsquo;ll explore what OCPP is, why it&amp;rsquo;s essential, and how it works.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free SSL certificates using Cert manager and Let’s Encrypt 🕵️‍♂️</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</link>
+      <link>http://localhost:1313/pinchofcode/post/ssl_cert_letsencrypt/</link>
       <pubDate>Fri, 29 Mar 2024 17:38:19 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/ssl_cert_letsencrypt/</guid>
       <description>&lt;h1 id=&#34;free-ssl-certificates-using-cert-manager-and-lets-encrypt-&#34;&gt;Free SSL certificates using Cert manager and Let’s Encrypt 🕵️‍♂️&lt;/h1&gt;&#xA;&lt;p&gt;Securing web traffic with SSL/TLS certificates is essential for protecting data privacy and maintaining trust with users. In Kubernetes environments, managing SSL certificates manually can be cumbersome and error-prone. However, with tools like Cert Manager and Let’s Encrypt, obtaining and renewing SSL certificates can be automated, ensuring seamless encryption for your applications. In this blog post, we&amp;rsquo;ll explore how Cert Manager and Let’s Encrypt work together to provide automatic SSL certificate management in Kubernetes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ingress and Load Balancer binding in bare-metal Kubernetes🚀</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</link>
+      <link>http://localhost:1313/pinchofcode/post/k8_metallb_ingress_configuartion/</link>
       <pubDate>Fri, 29 Mar 2024 15:53:47 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/k8_metallb_ingress_configuartion/</guid>
       <description>&lt;h1 id=&#34;ingress-and-load-balancer-binding-in-bare-metal-kubernetes&#34;&gt;Ingress and Load Balancer binding in bare-metal Kubernetes🚀&lt;/h1&gt;&#xA;&lt;p&gt;In our previous post we have seen how we can add MetalLB to our bare-metal Kubernetes.&#xA;It helps us with a single point of contact between client network and cluster.&lt;/p&gt;&#xA;&lt;p&gt;MetalLB helps for load-balancing external services we can combine it with an ingress controller,&#xA;to provide a stateful layer between the network and the services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MetalLB as a Load Balancer Service for On-Premises Kubernetes 🎡</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</link>
+      <link>http://localhost:1313/pinchofcode/post/k8_metallb_configuartion/</link>
       <pubDate>Wed, 13 Mar 2024 16:40:55 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/k8_metallb_configuartion/</guid>
       <description>&lt;h1 id=&#34;metallb-as-a-load-balancer-service-for-on-premises-kubernetes-&#34;&gt;MetalLB as a Load Balancer Service for On-Premises Kubernetes 🎡&lt;/h1&gt;&#xA;&lt;p&gt;Unlike cloud providers that offer built-in load balancers, on-premises Kubernetes clusters often lack this functionality out-of-the-box. In this guide, we&amp;rsquo;ll walk through the process of configuring MetalLB as a load balancer service for your on-premises Kubernetes cluster, enabling you to distribute traffic to your applications effectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installation of some common tools in Onpremise Kubernetes 🏳</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</link>
+      <link>http://localhost:1313/pinchofcode/post/k8_tools_install/</link>
       <pubDate>Wed, 13 Mar 2024 11:23:42 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/k8_tools_install/</guid>
       <description>&lt;h1 id=&#34;installation-of-some-common-tools-in-onpremise-kubernetes-&#34;&gt;Installation of some common tools in Onpremise Kubernetes 🏳&lt;/h1&gt;&#xA;&lt;p&gt;In this guide, we&amp;rsquo;ll walk through the process of installing tools like Helm, Metallb, Ingress Controller, Keycloak, Jenkins in  Kubernetes (Ubuntu).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Kubernetes on Ubuntu: A Step-by-Step Guide 🛳</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</link>
+      <link>http://localhost:1313/pinchofcode/post/kubernetes_on_ubuntu/</link>
       <pubDate>Tue, 12 Mar 2024 17:23:31 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/kubernetes_on_ubuntu/</guid>
       <description>&lt;h1 id=&#34;installing-kubernetes-on-ubuntu-a-step-by-step-guide-&#34;&gt;Installing Kubernetes on Ubuntu: A Step-by-Step Guide 🛳&lt;/h1&gt;&#xA;&lt;p&gt;Kubernetes has become the de facto standard for container orchestration, enabling organizations to deploy, scale, and manage containerized applications with ease. In this guide, we&amp;rsquo;ll walk through the process of installing Kubernetes on Ubuntu, one of the most popular Linux distributions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uploading Docker Image from WSL 2 to AWS ECR 🚢</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</link>
+      <link>http://localhost:1313/pinchofcode/post/wsl2_aws_ecr_upload/</link>
       <pubDate>Tue, 12 Mar 2024 16:23:39 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/wsl2_aws_ecr_upload/</guid>
       <description>&lt;h1 id=&#34;uploading-docker-image-from-wsl-2-to-aws-ecr-&#34;&gt;Uploading Docker Image from WSL 2 to AWS ECR 🚢&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll walk through the process of uploading a Docker image from Windows Subsystem for Linux 2 (WSL 2) to Amazon Elastic Container Registry (ECR) on AWS. Docker has become a cornerstone technology for containerizing applications, and AWS ECR provides a managed container registry service for storing, managing, and deploying Docker container images.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setting Up WSL 2 and Installing Docker Engine on Windows ❄</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</link>
+      <link>http://localhost:1313/pinchofcode/post/wsl2_docker_windows/</link>
       <pubDate>Tue, 12 Mar 2024 11:50:56 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/wsl2_docker_windows/</guid>
       <description>&lt;h1 id=&#34;setting-up-wsl-2-and-installing-docker-engine-on-windows-&#34;&gt;Setting Up WSL 2 and Installing Docker Engine on Windows ❄&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll explore how to enable WSL 2 in Windows machine. Once WSL 2 enabled, we&#xA;will check how we can install docker engine and run a container using that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hosting Hugo generated site in Github 🌊</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</link>
+      <link>http://localhost:1313/pinchofcode/post/create_github_site_with_hugo/</link>
       <pubDate>Fri, 08 Mar 2024 16:49:25 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/create_github_site_with_hugo/</guid>
       <description>&lt;h1 id=&#34;hosting-hugo-generated-site-in-github-&#34;&gt;Hosting Hugo generated site in Github 🌊&lt;/h1&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll explore how to create a website using Hugo, a static site generator, and host it on GitHub Pages. We&amp;rsquo;ll also integrate the GitHub-style theme for a sleek and modern look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</link>
+      <link>http://localhost:1313/pinchofcode/post/very_first_post/</link>
       <pubDate>Fri, 08 Mar 2024 12:55:13 +0530</pubDate>
-      <guid>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</guid>
+      <guid>http://localhost:1313/pinchofcode/post/very_first_post/</guid>
       <description>&lt;p&gt;Hey Everyone.😊 I&amp;rsquo;m Krishna Kalesh. Welcome to my technology blog!&lt;/p&gt;&#xA;&lt;p&gt;I created this blog to jot down my coding and technology learning experiences.&lt;/p&gt;&#xA;&lt;p&gt;Looking forward to sharing my code experiments and latest trends on technology.&lt;/p&gt;</description>
     </item>
   </channel>
