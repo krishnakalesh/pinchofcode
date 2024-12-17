@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pinchofcode/post/ev_ocpp2/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/ev_ocpp2/</loc>
     <lastmod>2024-12-17T14:35:07+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/</loc>
     <lastmod>2024-12-17T14:35:07+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/</loc>
     <lastmod>2024-12-17T14:35:07+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/ocpp_ev/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/ocpp_ev/</loc>
     <lastmod>2024-12-16T00:46:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/ssl_cert_letsencrypt/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/ssl_cert_letsencrypt/</loc>
     <lastmod>2024-03-29T18:32:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/k8_metallb_ingress_configuartion/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_ingress_configuartion/</loc>
     <lastmod>2024-03-29T18:29:56+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/k8_metallb_configuartion/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/k8_metallb_configuartion/</loc>
     <lastmod>2024-03-13T18:03:38+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/k8_tools_install/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/k8_tools_install/</loc>
     <lastmod>2024-03-13T15:00:54+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/kubernetes_on_ubuntu/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/kubernetes_on_ubuntu/</loc>
     <lastmod>2024-03-13T11:03:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/wsl2_aws_ecr_upload/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/wsl2_aws_ecr_upload/</loc>
     <lastmod>2024-03-12T17:19:04+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/wsl2_docker_windows/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/wsl2_docker_windows/</loc>
     <lastmod>2024-03-12T14:36:18+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/create_github_site_with_hugo/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/create_github_site_with_hugo/</loc>
     <lastmod>2024-03-12T14:29:29+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/post/very_first_post/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/post/very_first_post/</loc>
     <lastmod>2024-03-29T19:06:27+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/categories/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pinchofcode/tags/</loc>
+    <loc>https://krishnakalesh.github.io/pinchofcode/tags/</loc>
   </url>
 </urlset>
